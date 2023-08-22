@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gidl:GIDLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gidl="http://eu.chorevolution/modelingnotations/gidl" hostAddress="https://data.lacity.org" protocol="REST">
+  <hasInterfaces role="consumer">
+    <hasOperations name="laxparking_through_dexms" type="one_way" qos="reliable">
+      <hasScope name="laxparking_through_dexms" verb="GET" uri="resource/xzkr-5anj.json"/>
+      <inputData name="request" context="body" media="json">
+			<hasDataType xsi:type="gidl:SimpleType" name="key_vaue" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="lotdescription" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="parkingid" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="totalparkingspaces" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="occupied" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="freespaces" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="fullcapacity" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="color" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="dataexportdatetime" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="long" minOccurs="one" maxOccurs="one" type="string"/>
+            <hasDataType xsi:type="gidl:SimpleType" name="lat" minOccurs="one" maxOccurs="one" type="string"/>
+      </inputData> 
+    </hasOperations>
+  </hasInterfaces>
+</gidl:GIDLModel>
+
+
